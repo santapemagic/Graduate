@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WeatherOP</string>
+    <string name="action_settings">Settings</string><color name="color_Violet">#ee82ee</color>
+    <string name="hello_world">Hello world!</string>
+    
+    <color name="color_Black">#000</color>
+    <color name="color_Ivory">#fffff0</color>
+    <color name="color_Lightgreen">#90ee90</color>
+    <color name="color_Skyblue">#87ceeb</color>
+    <color name="color_Seashell">#fff5ee</color>
+
+</resources>

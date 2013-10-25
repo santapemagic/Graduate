@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity" >
+
+    <!-- 날씨 정보 -->
+
+    <TextView
+        android:id="@+id/Weather_info"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+
+     	android:background="@color/color_Skyblue"
+        android:text="여기에 날씨 정보가 들어온다"
+        android:textSize="28sp" />
+
+    <!-- 날씨에 따른 advice 정보 -->
+
+    <TextView
+        android:id="@+id/Advice_info"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/color_Lightgreen"
+        android:text="여기에 날씨정보를 바탕으로한 정보제공이 들어온다" />
+
+    <TextView
+    android:id="@+id/XY_info"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+	android:background="@color/color_Ivory"
+    android:text="여기에 남녀 선택이 들어온다" />
+
+</LinearLayout>
