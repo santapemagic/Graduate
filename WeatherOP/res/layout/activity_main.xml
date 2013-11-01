@@ -4,34 +4,127 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-
     tools:context=".MainActivity" >
 
-    <!-- 날씨 정보 -->
+    <Button
+        android:id="@+id/input_data"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:onClick="onInputButtonClick"
+        android:text="데이터 입력" />
 
-    <TextView
-        android:id="@+id/Weather_info"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
 
-     	android:background="@color/color_Skyblue"
-        android:text="여기에 날씨 정보가 들어온다"
-        android:textSize="28sp" />
+        <TextView
+            android:id="@+id/left_day_info"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:text="2013-11-07"
+            android:textSize="15sp"
+            android:typeface="monospace" />
 
-    <!-- 날씨에 따른 advice 정보 -->
+        <TextView
+            android:id="@+id/right_day_info"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:text="2013-11-07"
+            android:textSize="15sp"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@+id/right_weather"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/right_image"
+            android:layout_marginRight="5dp"
+            android:text="최고 기온: 15\n최저 기온: 5"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/left_weather"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/left_image"
+            android:layout_marginLeft="5dp"
+            android:text="최고 기온: 15\n최저 기온: 5"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/right_image"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/right_day_info"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/cloud" />
+
+        <ImageView
+            android:id="@+id/left_image"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/left_day_info"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ic_launcher" />
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/Advice_info"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="130dp"
         android:background="@color/color_Lightgreen"
-        android:text="여기에 날씨정보를 바탕으로한 정보제공이 들어온다" />
+        android:text="여기에 날씨정보를 바탕으로한 정보제공이 들어온다"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_Ivory" >
+
+        <TextView
+            android:id="@+id/XY_info"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:background="@color/color_Ivory"
+            android:gravity="bottom|center|center_vertical|top"
+            android:text="성별 선택" />
+
+        <ImageView
+            android:id="@+id/X_image"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_toLeftOf="@+id/Y_image"
+            android:src="@drawable/x_base" />
+
+        <ImageView
+            android:id="@+id/Y_image"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/y_base" />
+    </RelativeLayout>
 
     <TextView
-    android:id="@+id/XY_info"
-    android:layout_width="match_parent"
-    android:layout_height="150dp"
-	android:background="@color/color_Ivory"
-    android:text="여기에 남녀 선택이 들어온다" />
+        android:id="@+id/w_mark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:gravity="right"
+        android:text="Developed by 3P"
+        android:textColor="@color/color_Skyblue"
+        android:textStyle="bold"
+        android:typeface="monospace" />
 
 </LinearLayout>

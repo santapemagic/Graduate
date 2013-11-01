@@ -29,13 +29,29 @@ public final class R {
         public static final int activity_vertical_margin=0x7f040001;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int cloud=0x7f020000;
+        public static final int ic_launcher=0x7f020001;
+        public static final int rain=0x7f020002;
+        public static final int snow=0x7f020003;
+        public static final int sun=0x7f020004;
+        public static final int thunder=0x7f020005;
+        public static final int x_base=0x7f020006;
+        public static final int y_base=0x7f020007;
     }
     public static final class id {
-        public static final int Advice_info=0x7f090001;
-        public static final int Weather_info=0x7f090000;
-        public static final int XY_info=0x7f090002;
-        public static final int action_settings=0x7f090003;
+        public static final int Advice_info=0x7f090007;
+        public static final int XY_info=0x7f090008;
+        public static final int X_image=0x7f090009;
+        public static final int Y_image=0x7f09000a;
+        public static final int action_settings=0x7f09000c;
+        public static final int input_data=0x7f090000;
+        public static final int left_day_info=0x7f090001;
+        public static final int left_image=0x7f090006;
+        public static final int left_weather=0x7f090005;
+        public static final int right_day_info=0x7f090002;
+        public static final int right_image=0x7f090004;
+        public static final int right_weather=0x7f090003;
+        public static final int w_mark=0x7f09000b;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;

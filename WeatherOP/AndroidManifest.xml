@@ -3,10 +3,13 @@
     package="com.example.weatherop"
     android:versionCode="1"
     android:versionName="1.0" >
-
-    <uses-sdk
+    
+<uses-permission android:name="android.permission.INTERNET" />
+   
+<uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="17" />
+
 
     <application
         android:allowBackup="true"
