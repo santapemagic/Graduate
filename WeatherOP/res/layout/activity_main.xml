@@ -4,127 +4,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/wood_picture"
     tools:context=".MainActivity" >
 
-    <Button
-        android:id="@+id/input_data"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:onClick="onInputButtonClick"
-        android:text="데이터 입력" />
-
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/left_day_info"
-            android:layout_width="130dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="15dp"
-            android:text="2013-11-07"
-            android:textSize="15sp"
-            android:typeface="monospace" />
-
-        <TextView
-            android:id="@+id/right_day_info"
-            android:layout_width="130dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="5dp"
-            android:layout_marginTop="15dp"
-            android:text="2013-11-07"
-            android:textSize="15sp"
-            android:typeface="monospace" />
-
-        <TextView
-            android:id="@+id/right_weather"
-            android:layout_width="130dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_below="@+id/right_image"
-            android:layout_marginRight="5dp"
-            android:text="최고 기온: 15\n최저 기온: 5"
-            android:textSize="15sp" />
-
-        <TextView
-            android:id="@+id/left_weather"
-            android:layout_width="130dp"
-            android:layout_height="45dp"
-            android:layout_alignParentLeft="true"
-            android:layout_below="@+id/left_image"
-            android:layout_marginLeft="5dp"
-            android:text="최고 기온: 15\n최저 기온: 5"
-            android:textSize="15sp" />
-
-        <ImageView
-            android:id="@+id/right_image"
-            android:layout_width="130dp"
-            android:layout_height="130dp"
-            android:layout_alignParentRight="true"
-            android:layout_below="@+id/right_day_info"
-            android:layout_marginRight="5dp"
-            android:src="@drawable/cloud" />
-
-        <ImageView
-            android:id="@+id/left_image"
-            android:layout_width="130dp"
-            android:layout_height="130dp"
-            android:layout_alignParentLeft="true"
-            android:layout_below="@+id/left_day_info"
-            android:layout_marginLeft="5dp"
-            android:src="@drawable/ic_launcher" />
-    </RelativeLayout>
-
-    <TextView
-        android:id="@+id/Advice_info"
+    <TabHost
+        android:id="@android:id/tabhost"
         android:layout_width="match_parent"
-        android:layout_height="130dp"
-        android:background="@color/color_Lightgreen"
-        android:text="여기에 날씨정보를 바탕으로한 정보제공이 들어온다"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:layout_height="match_parent" >
 
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/color_Ivory" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
 
-        <TextView
-            android:id="@+id/XY_info"
-            android:layout_width="50dp"
-            android:layout_height="80dp"
-            android:background="@color/color_Ivory"
-            android:gravity="bottom|center|center_vertical|top"
-            android:text="성별 선택" />
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
 
-        <ImageView
-            android:id="@+id/X_image"
-            android:layout_width="150dp"
-            android:layout_height="80dp"
-            android:layout_toLeftOf="@+id/Y_image"
-            android:src="@drawable/x_base" />
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
 
-        <ImageView
-            android:id="@+id/Y_image"
-            android:layout_width="150dp"
-            android:layout_height="80dp"
-            android:layout_alignParentRight="true"
-            android:layout_marginLeft="5dp"
-            android:src="@drawable/y_base" />
-    </RelativeLayout>
-
-    <TextView
-        android:id="@+id/w_mark"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="10"
-        android:gravity="right"
-        android:text="Developed by 3P"
-        android:textColor="@color/color_Skyblue"
-        android:textStyle="bold"
-        android:typeface="monospace" />
+               
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
 
 </LinearLayout>
